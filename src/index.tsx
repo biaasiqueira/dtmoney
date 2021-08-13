@@ -7,7 +7,7 @@ import { App } from './App';
 
 createServer({
   models: {
-    transition: Model,
+    transaction: Model,
   },
 
   seeds(server) {
@@ -25,7 +25,7 @@ createServer({
         {
           id: 2,
           title: 'outro',
-          type: 'deposit',
+          type: 'withdraw',
           category: 'Dev',
           amount: 1000,
           createdAt: new Date('20-03-2001'),
